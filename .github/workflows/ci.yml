@@ -1,0 +1,34 @@
+name: Build Docker images
+
+on:
+  push:
+    branches:
+      - stable
+      - dev
+  workflow_dispatch:
+  schedule:
+    - cron: '12 3 * * 3'
+
+jobs:
+  build-base:
+    permissions:
+      packages: write
+    uses: ./.github/workflows/build-image.yml
+    with:
+      image: base
+
+  build-toolkit-fs:
+    needs: build-base
+    permissions:
+      packages: write
+    uses: ./.github/workflows/build-image.yml
+    with:
+      image: toolkit-fs
+
+  build-toolkit-mongodb:
+    needs: build-base
+    permissions:
+      packages: write
+    uses: ./.github/workflows/build-image.yml
+    with:
+      image: toolkit-mongodb
