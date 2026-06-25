@@ -25,10 +25,10 @@ jobs:
     with:
       image: toolkit-fs
 
-  build-toolkit-mongodb:
+  build-mongosync:
     needs: build-base
     permissions:
       packages: write
     uses: ./.github/workflows/build-image.yml
     with:
-      image: toolkit-mongodb
+      image: mongosync
