@@ -9,6 +9,8 @@ RUN apt-get update && \
     jq \
     bash \
     curl \
+    screen \
+    p7zip-full \
     unzip \
     python3 \
     python3-pip \
