@@ -13,6 +13,7 @@ RUN apt-get update && \
     screen \
     p7zip-full \
     unzip \
+    rsync \
     python3 \
     python3-pip \
     python3-venv \
