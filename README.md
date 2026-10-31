@@ -12,3 +12,4 @@ Licensed under the [Apache-2.0](LICENSE) license.
 - `ghcr.io/lecpac-consulting/container-images/base:stable`: The image contains various tools useful in containerized environments, such as git, jq, bash, curl, python3 and pip.
 - `ghcr.io/lecpac-consulting/container-images/toolkit-fs:stable`: The image contains all tools from `base` plus additional tools useful in filesystem operations: cryptsetup, mdadm, xfsprogs, fio.
 - `ghcr.io/lecpac-consulting/container-images/mongosync:stable`: The image contains all tools from `base` plus [Mongosync](https://www.mongodb.com/docs/mongosync/current/).
+- `ghcr.io/lecpac-consulting/container-images/toolkit-sync:stable`: The image contains tools useful in synchronization operations: curl and age.
