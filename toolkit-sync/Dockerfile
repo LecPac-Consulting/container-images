@@ -6,6 +6,7 @@ RUN addgroup -g 1001 user && \
 RUN apk add --no-cache \
     ca-certificates \
     curl \
+    gnupg \
     age && \
     rm -rf /var/cache/apk/*
 
